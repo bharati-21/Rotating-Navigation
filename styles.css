@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;  
+    overflow-x: hidden;
+    margin: 0;
+    background: #333;
+    color: #222;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    background-color: #fafafa;
+    transform-origin: top left;
+    transition: transform 1s ease-in-out;
+    
+}
+
+.container.show-nav {
+    transform: rotate(-20deg);
+}
+
+
+.article-container {
+    padding: 4rem;
+}
+
+.article-container h5 {
+    margin-bottom: 1rem;
+    margin-top: 0.2rem;
+}
+
+.article-container p {
+    margin-bottom: 2rem;
+}
+
+.article-container h2{
+    margin-bottom: 0.5rem;
+}
+
+.article-container h1 {
+    margin-bottom: 0;
+}
+
+.article-container img {
+    width: 100%;
+}
+
+.circle-container {
+    position: fixed;
+    top: -100px;
+    left: -100px
+}
+
+.circle {
+    width: 200px;
+    background: #333;
+    color: #ccc;
+    height: 200px;
+    border-radius: 50%;
+    position: relative;
+    transition: transform 1s ease-in-out;
+}
+
+.circle button {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    background-color: transparent;
+    border: 0;
+    height: 200px;
+    width: 200px;
+    font-size: 2rem;
+    color: #fff;
+}
+
+
+button:focus {
+    outline: none;
+}
+
+button#open {
+    left: 20%;
+}
+
+button#close {
+    top: 5%;
+    left: -10%;
+    transform: rotate(90deg);
+    transform-origin: top lef;
+}
